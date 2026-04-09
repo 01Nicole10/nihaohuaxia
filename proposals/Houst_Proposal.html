@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Houst's Proposal · Xingchen International Travel Agency (Jiangmen, Guangdong Province) Co., Ltd.</title>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--ink:#1a1208;--gold:#b07d2e;--g2:#d4a843;--g3:#f0c96a;--cream:#faf6ee;--warm:#fffdf8;--muted:#7a6a52;--bdr:#e4dacb;--acc:#f5ede0;--red:#b03020;}
+*{margin:0;padding:0;box-sizing:border-box;}html{scroll-behavior:smooth;}
+body{background:var(--warm);color:var(--ink);font-family:'Jost',sans-serif;font-size:15.75px;line-height:1.7;}
+a{color:inherit;text-decoration:none;}
+/* HERO */
+.hero{position:relative;min-height:92vh;display:flex;flex-direction:column;justify-content:flex-end;overflow:hidden;background:#1a1208;}
+.hbg{position:absolute;inset:0;background:linear-gradient(155deg,rgba(26,18,8,.6) 0%,rgba(26,18,8,.1) 50%,rgba(26,18,8,.72) 100%),url('https://images.unsplash.com/photo-1508804185872-d7badad00f7d?w=1400&q=80') center/cover;animation:zoom 20s ease-in-out infinite alternate;}
+@keyframes zoom{from{transform:scale(1.02)}to{transform:scale(1.07)}}
+.hnav{position:absolute;top:30px;right:38px;display:flex;gap:24px;}
+.hnav a{color:rgba(255,255,255,.6);font-size:12px;letter-spacing:.1em;text-transform:uppercase;transition:.2s;}
+.hnav a:hover{color:var(--g3);}
+.hlogo{position:absolute;top:26px;left:38px;display:flex;align-items:center;gap:10px;}
+.hlogo img{max-height:40px;max-width:140px;object-fit:contain;}
+.hlogo-text{font-family:'Cormorant Garamond',serif;font-size:20px;color:var(--g2);letter-spacing:.04em;}
+.hcontent{position:relative;z-index:1;padding:0 38px 58px;max-width:780px;}
+.hey{font-size:11px;letter-spacing:.22em;text-transform:uppercase;color:var(--g2);margin-bottom:16px;display:flex;align-items:center;gap:10px;}
+.hey::before{content:'';display:block;width:28px;height:1px;background:var(--g2);}
+.htitle{font-family:'Cormorant Garamond',serif;font-size:clamp(36px,6vw,68px);color:#fff;line-height:1.1;font-weight:700;margin-bottom:20px;}
+.htitle em{color:var(--g3);font-style:italic;}
+.hmeta{display:flex;flex-wrap:wrap;gap:18px;margin-bottom:28px;}
+.hmi{color:rgba(255,255,255,.72);font-size:15px;display:flex;align-items:center;gap:8px;}
+.hmi-icon{font-size:22px;line-height:1;}
+.hcta{display:inline-flex;align-items:center;gap:8px;background:var(--g2);color:#1a1208;padding:13px 26px;font-size:12px;font-weight:600;letter-spacing:.1em;text-transform:uppercase;transition:.2s;}
+.hcta:hover{background:var(--g3);transform:translateY(-2px);}
+/* STRIP */
+.strip{background:var(--ink);display:grid;grid-template-columns:repeat(4,1fr);}
+.sc{padding:28px 24px;border-right:1px solid rgba(255,255,255,.07);}
+.sc:last-child{border-right:none;}
+.sn{font-family:'Cormorant Garamond',serif;font-size:36px;color:var(--g2);line-height:1;margin-bottom:4px;}
+.sl{font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:rgba(255,255,255,.36);}
+/* WRAP */
+.wrap{padding:68px 38px;max-width:960px;margin:0 auto;}
+.eyebrow{font-size:11px;letter-spacing:.2em;text-transform:uppercase;color:var(--gold);margin-bottom:10px;display:flex;align-items:center;gap:9px;}
+.eyebrow::before{content:'';display:block;width:20px;height:1px;background:var(--gold);}
+.stitle{font-family:'Cormorant Garamond',serif;font-size:clamp(26px,3.5vw,38px);margin-bottom:34px;line-height:1.2;}
+.divider{height:1px;background:var(--bdr);margin:0 38px;}
+/* ADVISOR */
+.igrid{display:grid;grid-template-columns:1fr 1.4fr;gap:50px;align-items:center;}
+.acard{background:var(--acc);padding:34px;border-left:3px solid var(--g2);}
+.aphoto{width:70px;height:70px;border-radius:50%;object-fit:cover;border:3px solid var(--g2);margin-bottom:13px;display:block;}
+.aname{font-family:'Cormorant Garamond',serif;font-size:22px;margin-bottom:2px;}
+.arole{font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);margin-bottom:14px;}
+.acon{display:flex;flex-direction:column;gap:7px;}
+.acon a{color:var(--muted);font-size:14px;display:flex;align-items:center;gap:9px;transition:.2s;}
+.acon a:hover{color:var(--gold);}
+.ibody p{color:var(--muted);font-size:14px;margin-bottom:12px;}
+/* ITINERARY */
+.it-bg{background:var(--cream);}
+.day-block{background:#fff;border:1px solid var(--bdr);margin-bottom:2px;overflow:hidden;transition:box-shadow .2s;}
+.day-block:hover{box-shadow:0 3px 18px rgba(176,125,46,.1);}
+.day-hd{display:grid;grid-template-columns:80px 1fr auto;align-items:center;padding:16px 22px;cursor:pointer;gap:14px;user-select:none;}
+.day-n{font-family:'Times New Roman',Times,serif;font-size:15px;color:var(--gold);font-weight:700;line-height:1.2;}
+.day-n small{display:block;font-size:10px;color:var(--muted);font-family:'Times New Roman',Times,serif;font-weight:400;letter-spacing:.1em;text-transform:uppercase;}
+.day-dt{font-size:11px;color:var(--muted);margin-bottom:2px;font-family:'Times New Roman',Times,serif;}
+.day-ct{font-family:'Times New Roman',Times,serif;font-size:17px;font-weight:600;}
+.day-chev{color:var(--muted);font-size:16px;transition:transform .25s;}
+.day-block.open .day-chev{transform:rotate(180deg);}
+.day-bd{display:none;padding:4px 22px 20px;border-top:1px solid var(--bdr);}
+.day-block.open .day-bd{display:block;}
+.day-meta{display:flex;flex-direction:column;gap:7px;margin:12px 0 10px;}
+.mrow{display:flex;gap:10px;font-size:14px;align-items:baseline;}
+.mlbl{color:var(--gold);font-weight:600;min-width:100px;flex-shrink:0;font-size:15px;}
+.acts{display:flex;flex-direction:column;gap:6px;margin-bottom:10px;}
+.act{display:flex;align-items:flex-start;gap:9px;padding:8px 12px;background:var(--acc);font-size:14px;}
+.adot{width:6px;height:6px;border-radius:50%;background:var(--gold);flex-shrink:0;margin-top:7px;}
+.ddesc{font-size:13px;color:var(--muted);line-height:1.78;margin-top:6px;}
+/* HOTELS */
+.hgrid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;}
+.hcard{border:1px solid var(--bdr);overflow:hidden;}
+.himg{width:100%;height:150px;object-fit:cover;display:block;background:var(--acc);}
+.hph{width:100%;height:150px;background:var(--acc);}
+.hbody{padding:16px;}
+.hcity{font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--gold);margin-bottom:4px;}
+.hname{font-family:'Cormorant Garamond',serif;font-size:17px;margin-bottom:2px;font-weight:600;}
+.hstars{color:var(--gold);font-size:13px;}
+.hroom{font-size:13px;color:var(--muted);margin-top:4px;}
+.hfeats{display:flex;flex-wrap:wrap;gap:4px;margin-top:8px;}
+.hfeat{font-size:10px;padding:2px 8px;border:1px solid var(--bdr);color:var(--muted);}
+/* ATTRACTION PHOTOS */
+.pgrid{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;}
+.pitem{overflow:hidden;border-radius:4px;border:1px solid var(--bdr);}
+.pitem img{width:100%;height:180px;object-fit:cover;display:block;transition:transform .4s;}
+.pitem:hover img{transform:scale(1.04);}
+.pcap{padding:10px 12px;font-size:12px;color:var(--muted);background:#fff;}
+/* PRICE */
+.pbg{background:var(--ink);color:#fff;}
+.pbg .eyebrow{color:var(--g3);}.pbg .eyebrow::before{background:var(--g3);}
+.pbg .stitle{color:#fff;}
+.pgr{display:grid;grid-template-columns:1fr 1fr;gap:24px;margin-top:34px;}
+.pm{background:rgba(255,255,255,.05);border:1px solid rgba(212,168,67,.3);padding:30px;}
+.plbl{font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:rgba(255,255,255,.38);margin-bottom:8px;}
+.pamt{font-family:'Cormorant Garamond',serif;font-size:44px;color:var(--g2);line-height:1;}
+.pamt sub{font-size:16px;vertical-align:top;margin-top:7px;display:inline-block;}
+.pdesc{font-size:12px;color:rgba(255,255,255,.3);margin-top:5px;}
+/* Total USD highlight block */
+.ptotal-usd-wrap{margin-bottom:6px;}
+.ptotal-usd-label{font-size:10px;letter-spacing:.16em;text-transform:uppercase;color:rgba(255,255,255,.38);margin-bottom:4px;}
+.ptotal-usd-amt{font-family:'Cormorant Garamond',serif;font-size:58px;font-weight:700;color:#fff;line-height:1;letter-spacing:-.01em;}
+.ptotal-usd-amt span.cur{font-size:22px;vertical-align:top;margin-top:10px;display:inline-block;color:var(--g2);font-weight:400;}
+.ptotal-usd-badge{display:inline-block;background:var(--g2);color:#1a1208;font-size:10px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;padding:2px 9px;border-radius:2px;margin-left:6px;vertical-align:middle;position:relative;top:-6px;}
+.pperperson-usd{margin-top:10px;padding-top:10px;border-top:1px solid rgba(212,168,67,.2);}
+.pperperson-usd-label{font-size:10px;letter-spacing:.14em;text-transform:uppercase;color:rgba(255,255,255,.35);margin-bottom:3px;}
+.pperperson-usd-amt{font-family:'Cormorant Garamond',serif;font-size:28px;color:var(--g3);line-height:1;}
+.pperperson-usd-amt span.cur{font-size:13px;vertical-align:top;margin-top:5px;display:inline-block;color:var(--g3);}
+.pperperson-usd-sub{font-size:11px;color:rgba(255,255,255,.28);margin-top:2px;}
+.pincl{list-style:none;margin-top:16px;display:flex;flex-direction:column;gap:8px;}
+.pincl li{display:flex;gap:8px;font-size:14px;color:rgba(255,255,255,.68);}
+.pincl li::before{content:'✓';color:var(--g2);font-weight:700;flex-shrink:0;}
+.ps{background:rgba(255,255,255,.03);border:1px solid rgba(255,255,255,.08);padding:30px;display:flex;flex-direction:column;gap:13px;}
+.prow{display:flex;justify-content:space-between;align-items:baseline;padding-bottom:9px;border-bottom:1px solid rgba(255,255,255,.06);}
+.prow:last-of-type{border-bottom:none;}
+.prowl{font-size:12px;color:rgba(255,255,255,.42);}
+.prowv{font-size:14px;font-weight:500;}
+.prowv.dep{color:var(--g2);}
+.pbtn{display:flex;align-items:center;justify-content:center;gap:8px;padding:13px 20px;font-size:12px;font-weight:600;letter-spacing:.08em;text-transform:uppercase;text-decoration:none;border:none;cursor:pointer;font-family:'Jost',sans-serif;transition:.2s;width:100%;}
+.pbtn-p{background:var(--g2);color:#1a1208;margin-top:20px;}
+.pbtn-p:hover{background:var(--g3);}
+.pbtn-s{background:transparent;color:rgba(255,255,255,.5);border:1px solid rgba(255,255,255,.15);margin-top:8px;}
+.pbtn-s:hover{border-color:var(--g2);color:var(--g2);}
+.pnote{font-size:11px;color:rgba(255,255,255,.22);text-align:center;line-height:1.6;margin-top:9px;}
+/* INCLUSIONS */
+.incgrid{display:grid;grid-template-columns:1fr 1fr;gap:24px;}
+.inct{font-family:'Cormorant Garamond',serif;font-size:19px;margin-bottom:13px;}
+.incl{list-style:none;display:flex;flex-direction:column;gap:9px;}
+.incl li{font-size:14px;color:#3a2e1f;}
+.excl li{color:var(--muted);}
+/* REVIEWS */
+.rbg{background:var(--cream);}
+.rgrid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;}
+.rcard{background:#fff;padding:24px;border:1px solid var(--bdr);}
+.rstars{color:var(--gold);font-size:16px;letter-spacing:2px;margin-bottom:10px;}
+.rtext{font-size:14px;color:var(--muted);line-height:1.78;margin-bottom:13px;font-style:italic;}
+.rauthor{font-size:13px;font-weight:600;}
+.rdate{font-size:12px;color:var(--muted);}
+/* CANCEL */
+.cgrid{display:grid;grid-template-columns:repeat(4,1fr);gap:2px;margin-top:30px;}
+.ccell{background:var(--acc);padding:22px 16px;text-align:center;border:1px solid var(--bdr);}
+.cpct{font-family:'Cormorant Garamond',serif;font-size:32px;margin-bottom:4px;}
+.cpct.full{color:var(--gold);}
+.cpct.zero{color:var(--red);}
+.cwhen{font-size:12px;color:var(--muted);line-height:1.5;}
+/* FOOTER */
+footer{background:#110e06;color:rgba(255,255,255,.3);padding:34px 38px;text-align:center;font-size:12px;}
+footer strong{color:var(--g2);}
+@media(max-width:768px){.strip,.hgrid,.rgrid,.cgrid,.pgr,.incgrid,.igrid,.pgrid{grid-template-columns:1fr!important;}.wrap{padding:50px 20px;}.hcontent{padding:0 20px 46px;}.hnav{right:20px;}.hlogo{left:20px;}.divider{margin:0 20px;}}
+</style>
+</head>
+<body>
+
+<section class="hero">
+  <div class="hbg"></div>
+  <div class="hlogo">
+    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAW8AAAFeCAYAAABKGp4cAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA25pVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuNi1jMTQ1IDc5LjE2MzQ5OSwgMjAxOC8wOC8xMy0xNjo0MDoyMiAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtcE1NOk9yaWdpbmFsRG9jdW1lbnRJRD0ieG1wLmRpZDpjYmM0OWZkOC01NzRjLTUwNGYtOTJiMS1mYjgzMzhiZGY5ZjUiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6QjhBOTREODYxOTNBMTFGMTgwQkY5NTc1Q0REMDZGMjAiIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6QjhBOTREODUxOTNBMTFGMTgwQkY5NTc1Q0REMDZGMjAiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENDIDIwMTkgKFdpbmRvd3MpIj4gPHhtcE1NOkRlcml2ZWRGcm9tIHN0UmVmOmluc3RhbmNlSUQ9InhtcC5paWQ6MTcxNTEyNjRERjRDMTFFRThENTJBNjkzOTRDNTIzMDUiIHN0UmVmOmRvY3VtZW50SUQ9InhtcC5kaWQ6MTcxNTEyNjVERjRDMTFFRThENTJBNjkzOTRDNTIzMDUiLz4gPC9yZGY6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" alt="Xingchen International Travel Agency (Jiangmen, Guangdong Province) Co., Ltd.">
+  </div>
+  <nav class="hnav">
+    <a href="#itinerary">Itinerary</a>
+    <a href="#hotels">Hotels</a>
+    <a href="#price">Pricing</a>
+    <a href="#reviews">Reviews</a>
+  </nav>
+  <div class="hcontent">
+    <p class="hey">Personalised Proposal</p>
+    <h1 class="htitle">Houst's<br><em>9-Day China Tour: Guangzhou, Zhangjiajie, Chongqing & Chengdu</em></h1>
+    <div class="hmeta">
+      
+      <div class="hmi"><span class="hmi-icon">🗓</span> 9 Days</div>
+      <div class="hmi"><span class="hmi-icon">👤</span> 2 Adults</div>
+      <div class="hmi"><span class="hmi-icon">📍</span> Guangzhou · Zhangjiajie · Chongqing · Chengdu</div>
+    </div>
+    <a href="#price" class="hcta">View Pricing &amp; Book →</a>
+  </div>
+</section>
+
+<div class="strip">
+  <div class="sc"><div class="sn">9</div><div class="sl">Days</div></div>
+  <div class="sc"><div class="sn">9</div><div class="sl">Destinations</div></div>
+  <div class="sc"><div class="sn">—</div><div class="sl">Hotels</div></div>
+  <div class="sc"><div class="sn">24/7</div><div class="sl">Support</div></div>
+</div>
+
+<section class="wrap">
+  <div class="igrid">
+    <div class="acard">
+      <img class="aphoto" src="https://images.unsplash.com/photo-1607746882042-944635dfe10e?w=150&q=80" alt="Your Travel Advisor" onerror="this.style.display='none'">
+      <div class="aname">Your Travel Advisor</div>
+      <div class="arole">Travel Advisor</div>
+      <div class="acon">
+        
+        
+        
+      </div>
+    </div>
+    <div class="ibody">
+      <div class="eyebrow">Dear Houst</div>
+      <div class="stitle" style="font-size:28px;margin-bottom:14px">Thank You for Your Trust</div>
+      <p>A Journey from Lingnan Culture to Avatar Mountains and Sichuan Treasures</p>
+    </div>
+  </div>
+</section>
+
+<section class="it-bg" id="itinerary"><div class="wrap">
+  <div class="eyebrow">Day by Day</div>
+  <div class="stitle">Your Detailed Itinerary</div>
+  <div class="day-block">
+      <div class="day-hd">
+        <div class="day-n">Day 01</div>
+        <div class="day-info"><div class="day-dt">June 5</div><div class="day-ct">Guangzhou</div></div>
+        <div class="day-chev">▾</div>
+      </div>
+      <div class="day-bd">
+        <div class="day-meta">
+          <div class="mrow"><span class="mlbl">✈ Transport</span><span>Private transfer</span></div>
+          
+          
+        </div>
+        <div class="acts"><div class="act"><span class="adot"></span><span>Hong Kong airport pick-up, transfer to Guangzhou hotel, rest</span></div></div>
+        <p class="ddesc">Welcome to China! After your long journey from Houston via Vancouver, your guide will meet you at Hong Kong International Airport and escort you across the border to Guangzhou. Today is dedicated to rest and recovery, allowing you to adjust to the local time.</p>
+      </div>
+    </div><div class="day-block">
+      <div class="day-hd">
+        <div class="day-n">Day 02</div>
+        <div class="day-info"><div class="day-dt">June 6</div><div class="day-ct">Guangzhou</div></div>
+        <div class="day-chev">▾</div>
+      </div>
+      <div class="day-bd">
+        <div class="day-meta">
+          
+          
+          <div class="mrow"><span class="mlbl">🍽 Meals</span><span>Hotel breakfast</span></div>
+        </div>
+        <div class="acts"><div class="act"><span class="adot"></span><span>Chen Clan Academy, Yuexiu Park, Shamian Island, Yongqingfang, Canton Tower (exterior), Pearl River Night Cruise</span></div></div>
+        <p class="ddesc">Begin at Chen Clan Academy, a magnificent complex representing the pinnacle of Lingnan artistry. Next, visit Yuexiu Park, a sprawling green oasis. Explore Shamian Island, a sandbar that became a British and French concession after the Second Opium War (1861). Continue to Yongqingfang on Enning Road, Guangzhou’s longest-preserved arcade street built in 1931. As dusk falls, view the Canton Tower from the riverside before boarding your Pearl River night cruise for spectacular views of the illuminated skyline.</p>
+      </div>
+    </div><div class="day-block">
+      <div class="day-hd">
+        <div class="day-n">Day 03</div>
+        <div class="day-info"><div class="day-dt">June 7</div><div class="day-ct">Guangzhou → Zhangjiajie</div></div>
+        <div class="day-chev">▾</div>
+      </div>
+      <div class="day-bd">
+        <div class="day-meta">
+          <div class="mrow"><span class="mlbl">✈ Transport</span><span>High-speed train (6–7 hours)</span></div>
+          
+          <div class="mrow"><span class="mlbl">🍽 Meals</span><span>Hotel breakfast</span></div>
+        </div>
+        <div class="acts"><div class="act"><span class="adot"></span><span>High-speed train to Zhangjiajie, station pick-up, hotel check-in</span></div></div>
+        <p class="ddesc">After breakfast, transfer to Guangzhou South Railway Station for a high-speed train to Zhangjiajie. China‘s high-speed rail network is renowned for its punctuality and comfort. As you travel north, watch the landscape transform from the Pearl River Delta’s dense urban fabric to the lush, karst-studded hills of Hunan province.</p>
+      </div>
+    </div><div class="day-block">
+      <div class="day-hd">
+        <div class="day-n">Day 04</div>
+        <div class="day-info"><div class="day-dt">June 8</div><div class="day-ct">Zhangjiajie</div></div>
+        <div class="day-chev">▾</div>
+      </div>
+      <div class="day-bd">
+        <div class="day-meta">
+          
+          
+          
+        </div>
+        <div class="acts"><div class="act"><span class="adot"></span><span>Yuanjiajie, Avatar Hallelujah Mountain, Bailong Elevator, Ten-Mile Gallery</span></div></div>
+        <p class="ddesc">Walk through the real-life inspiration for the Hallelujah Mountains from James Cameron’s Avatar. The towering quartz-sandstone pillars of Yuanjiajie, including the famous Hallelujah Mountain (Southern Sky Column), create an otherworldly landscape. Ride the Bailong Elevator, the world‘s tallest outdoor elevator built into a cliff face, and explore the dramatic Ten-Mile Gallery.</p>
+      </div>
+    </div><div class="day-block">
+      <div class="day-hd">
+        <div class="day-n">Day 05</div>
+        <div class="day-info"><div class="day-dt">June 9</div><div class="day-ct">Zhangjiajie → Chongqing</div></div>
+        <div class="day-chev">▾</div>
+      </div>
+      <div class="day-bd">
+        <div class="day-meta">
+          <div class="mrow"><span class="mlbl">✈ Transport</span><span>Cable car, train</span></div>
+          
+          
+        </div>
+        <div class="acts"><div class="act"><span class="adot"></span><span>Tianmen Mountain (Glass Skywalk, Heaven‘s Gate), Tujia Folk Customs Park, train to Chongqing</span></div></div>
+        <p class="ddesc">Experience one of the world‘s longest cable car rides (30 minutes) from the city center to the summit. Challenge your courage on the glass-bottomed skywalk suspended on a sheer cliff face, then witness Heaven’s Gate—a massive natural arch 131.5 meters high—and descend the legendary 999 steps.</p>
+      </div>
+    </div><div class="day-block">
+      <div class="day-hd">
+        <div class="day-n">Day 06</div>
+        <div class="day-info"><div class="day-dt">June 10</div><div class="day-ct">Chongqing</div></div>
+        <div class="day-chev">▾</div>
+      </div>
+      <div class="day-bd">
+        <div class="day-meta">
+          
+          
+          
+        </div>
+        <div class="acts"><div class="act"><span class="adot"></span><span>Jiefangbei, Bayi Food Street, Kuixinglou, Hongyadong night view</span></div></div>
+        <p class="ddesc">Discover China‘s most unique urban landscape. Witness the magical transformation of Hongyadong, a complex of traditional stilted houses that blazes with golden lights after dark. Sample authentic Chongqing hot pot and local snacks on Bayi Food Street, visit the iconic Jiefangbei monument, and explore the ancient Ciqikou Town.</p>
+      </div>
+    </div><div class="day-block">
+      <div class="day-hd">
+        <div class="day-n">Day 07</div>
+        <div class="day-info"><div class="day-dt">June 11</div><div class="day-ct">Chongqing → Chengdu</div></div>
+        <div class="day-chev">▾</div>
+      </div>
+      <div class="day-bd">
+        <div class="day-meta">
+          <div class="mrow"><span class="mlbl">✈ Transport</span><span>Train</span></div>
+          
+          
+        </div>
+        <div class="acts"><div class="act"><span class="adot"></span><span>Liziba Light Rail Station, Eling No.2 Factory, Ciqikou Ancient Town, train to Chengdu</span></div></div>
+        
+      </div>
+    </div><div class="day-block">
+      <div class="day-hd">
+        <div class="day-n">Day 08</div>
+        <div class="day-info"><div class="day-dt">June 12</div><div class="day-ct">Chengdu</div></div>
+        <div class="day-chev">▾</div>
+      </div>
+      <div class="day-bd">
+        <div class="day-meta">
+          
+          
+          
+        </div>
+        <div class="acts"><div class="act"><span class="adot"></span><span>Chengdu Panda Base, Sanxingdui Museum</span></div></div>
+        <p class="ddesc">Get up close with giant pandas at the Chengdu Panda Base—arrive early to see them most active. Journey back 3,000 years at Sanxingdui Museum to discover the mysterious bronze masks of the ancient Shu kingdom.</p>
+      </div>
+    </div><div class="day-block">
+      <div class="day-hd">
+        <div class="day-n">Day 09</div>
+        <div class="day-info"><div class="day-dt">June 13</div><div class="day-ct">Chengdu</div></div>
+        <div class="day-chev">▾</div>
+      </div>
+      <div class="day-bd">
+        <div class="day-meta">
+          
+          
+          
+        </div>
+        <div class="acts"><div class="act"><span class="adot"></span><span>Wuhou Shrine, People’s Park, Chunxi Road</span></div></div>
+        <p class="ddesc">Experience Chengdu‘s famous teahouse culture at People’s Park and explore the vibrant Jinli Ancient Street near Wuhou Shrine.</p>
+      </div>
+    </div>
+</div></section>
+
+
+
+
+
+<section class="pbg" id="price"><div class="wrap">
+  <div class="eyebrow">Investment</div>
+  <div class="stitle">Transparent Pricing</div>
+  <div class="pgr">
+    <div class="pm">
+      <div class="plbl">Total for 2 Travellers</div>
+      <div class="ptotal-usd-wrap">
+        <div class="ptotal-usd-label">Total USD</div>
+        <div class="ptotal-usd-amt">
+          <span style="font-size:32px;color:rgba(255,255,255,.3)">—</span>
+        </div>
+        
+      </div>
+      
+      
+      
+      <a href="#" class="pbtn pbtn-p">💳 Pay Deposit</a>
+      <a href="#" class="pbtn pbtn-s">Pay in Full</a>
+      <p class="pnote">Visa · MasterCard · PayPal · Bank Transfer</p>
+    </div>
+    <div class="ps">
+      
+      
+      
+      
+      
+    </div>
+  </div>
+</div></section>
+
+
+
+<section class="rbg" id="reviews"><div class="wrap">
+  <div class="eyebrow">Testimonials</div>
+  <div class="stitle">What Our Clients Say</div>
+  <div class="rgrid">
+    <div class="rcard"><div class="rstars">★★★★★</div>
+    <p class="rtext">"We booked a private China tour through THE-STARS and it exceeded every expectation. From the seamless airport transfers to the hand-picked local restaurants, every detail was thoughtfully arranged. Our guide was knowledgeable and incredibly warm. Highly recommended for anyone looking for a truly personalised travel experience."</p>
+    <div class="rauthor">James Whitfield · London, UK</div>
+    <div class="rdate">15/03/2026</div></div>
+    <div class="rcard"><div class="rstars">★★★★★</div>
+    <p class="rtext">"THE-STARS organised a 12-day trip through Yunnan for our family of four. The itinerary was perfectly paced, with just the right balance of sightseeing and free time. Communication throughout the planning process was prompt and professional. We will absolutely be booking with them again for our next adventure."</p>
+    <div class="rauthor">Sarah Okonkwo · Melbourne, Australia</div>
+    <div class="rdate">28/01/2026</div></div>
+    <div class="rcard"><div class="rstars">★★★★★</div>
+    <p class="rtext">"nihaohuaxia made our dream China trip a reality. I had a very specific wish list — the Li River, a Yangtze cruise, and a private visit to a tea farm — and they delivered on every single item without hesitation. The level of personalisation and local expertise is unlike anything I've experienced with other agencies."</p>
+    <div class="rauthor">Michael Torres · Los Angeles, USA</div>
+    <div class="rdate">07/02/2026</div></div>
+    <div class="rcard"><div class="rstars">★★★★★</div>
+    <p class="rtext">"I cannot say enough good things about nihaohuaxia. Their team put together a stunning 15-day itinerary that took us off the beaten path in ways we never would have found on our own. The quality of hotels, guides, and transport was consistently excellent throughout the entire journey."</p>
+    <div class="rauthor">Emily Chen · Toronto, Canada</div>
+    <div class="rdate">19/04/2026</div></div></div>
+</div></section>
+
+<div class="divider"></div>
+<section class="wrap">
+  <div class="eyebrow">Booking Protection</div>
+  <div class="stitle">Flexible Cancellation Policy</div>
+  <div class="cgrid">
+    <div class="ccell"><div class="cpct full">100%</div><div class="cwhen">22+ days before<br>Full refund</div></div>
+    <div class="ccell"><div class="cpct">70%</div><div class="cwhen">15–21 days before<br>70% refund</div></div>
+    <div class="ccell"><div class="cpct">50%</div><div class="cwhen">8–14 days before<br>50% refund</div></div>
+    <div class="ccell"><div class="cpct zero">0%</div><div class="cwhen">0–7 days before<br>No refund</div></div>
+  </div>
+</section>
+
+<footer>
+  <p>Prepared by <strong>Your Travel Advisor</strong> exclusively for <strong>Houst</strong></p>
+  
+  <p style="margin-top:8px;font-size:16.5px;color:#ffffff;font-weight:600">Xingchen International Travel Agency (Jiangmen, Guangdong Province) Co., Ltd.</p>
+  <p style="margin-top:4px;font-size:15px;color:#ffffff;line-height:1.7">Address (Guangdong) : 728-731 ZhiHuiCheng, Pengjiang District, Jiangmen City, Guangdong Province, China<br>Address (Sichuan) : Room 2005, Building A, Huafu International, No. 426, Section 1, Jingxiao Road, Chengdu, Sichuan Province, China</p>
+  <p style="margin-top:12px;font-size:10px;opacity:.35">© Xingchen International Travel Agency (Jiangmen, Guangdong Province) Co., Ltd. · All rights reserved</p>
+</footer>
+
+<script>
+document.querySelectorAll('.day-hd').forEach(h=>h.onclick=()=>h.parentElement.classList.toggle('open'));
+</script>
+</body></html>
